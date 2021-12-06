@@ -1,0 +1,57 @@
+{% block contenido1 %}
+    <div class="f5">
+        <img style="margin-top: 20%;"  src="XXXXXXXXXXXXXXXXXXX.jpg" alt="No se pudo cargar la imagen" id="fotos">
+    </div>
+    <div class="f5">
+        <button style="margin-top: 15px;">Cambiar fotos</button>    
+    </div>
+{% endblock %}
+   
+{% block contenido2%}
+    <form  style = " width: 60%; background-color: gray; border: 5px double black; border-radius: 10px; margin: 10% 20%; height: 70%; " action = "/login/" method = "POST" id = "registroUsuario">
+        <div  class = " f1 " >
+            <h2 > Registro Nuevo Usuario </h2 >
+        </div >
+        <div  class = " f1 " >
+            <label  for = "nombre" > Nombre </label > 
+            <input  type = "text" id = "nombre" placeholder = "Ingrese nombre" >
+        </div >
+        <div  class = " f1 " >
+            <label  for = "apellido" > Apellido </label > 
+            <input  type = "text" id = "nombre" placeholder = "Ingrese apellido" >
+        </div>
+        <div  class = " f1 " >
+            <label  for = " correo_electronico " > Correo Electrónico </label > 
+            <input  type = "email" id = "correo_electronico" placeholder = "Ingrese correo " >
+        </div>
+        <div  class = " f1 " >
+            <label  for = "telefono" > Telefono </label > 
+            <input  type = "number" id = "telefono" placeholder = "Ingrese teléfono" >
+        </div>
+
+        <div  class = " f1 " >
+            <label  for = "tipo id" > Tipo Id </label > 
+            <input  type = "text" id = "tipo id" placeholder = "Seleccione" >
+        </div>
+        <div  class = " f1 " >
+            <label  for = "numero id" > Numero ID </label > 
+            <input  type = "number" id = "numero id" placeholder = "Ingrese Id" >
+        </div>
+        <div  class = " f1 " >
+            <label  for = "usuario" > Usuario </label > 
+            <input  type = "text" id = "usuario" placeholder = "Ingrese usuario" >
+        </div>
+        <div  class = " f1 " >
+            <label  for = "contraseña" > Clave </label > 
+            <input  type = "password" id = "contraseña" placeholder = "Ingrese clave" >
+        </div>
+        <div  class = " f1 " >
+            <label  for = "contraseña2" > Repita Clave </label > 
+            <input  type = "password" id = "contraseña2" placeholder = "Verificar clave" >
+        </div>
+        <div  class = " f1 " >
+            <button  style = " margin-top: 25px; " type = "button" id = "crear usuario" name = "crear usuario" > Crear Usuario </button >
+            <button  style = " margin-top: 25px; " type="button" id = "cancelar" name = "cancelar" > Cancelar </button >
+        </div >
+    </formulario >
+{%endblock%}
